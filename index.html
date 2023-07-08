@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/x-icon" href="./src/img/logo.svg" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/dist/main.css" rel="stylesheet">
+	<title>TraBook</title>
+</head>
+<body class="bg-White z-10">
+	<!-- Navbar -->
+	<nav class="md:px-10 fixed top-0 right-0 w-full bg-white z-40 py-3 px-4 shadow-md transition-all duration-300" id="navbar">
+		<div class="flex items-center justify-between  font-semibold">
+			<!-- Logo Section -->
+			<div class="flex space-x-2 ">
+				<h1 class=" lg:text-xl md:text-md sm:text-lg font-bold">TraBook</h1><img src="./src/img/logo.svg">
+			</div>
+			<!-- Links -->
+			<div class="md:flex sm:hidden space-x-8 text-sm duration-300">
+				<a href="#" class="lg:text-sm md:text-xs sm:text-xs hover:text-BrightBlack duration-300">Home</a>
+				<a href="#" class="lg:text-sm md:text-xs sm:text-xs hover:text-BrightBlack duration-300">About</a>
+				<a href="#" class="lg:text-sm md:text-xs sm:text-xs hover:text-BrightBlack duration-300">Destination</a>
+				<a href="#" class="lg:text-sm md:text-xs sm:text-xs hover:text-BrightBlack duration-300">Tour</a>
+				<a href="#" class="lg:text-sm md:text-xs sm:text-xs hover:text-BrightBlack duration-300">Blog</a>
+			</div>
+			<!-- Login/SignUp -->
+			<div class="md:flex sm:hidden space-x-8 text-sm duration-300">
+				<button class="lg:text-sm md:text-xs sm:text-xs hover:text-Yellow text-Orange duration-300">Login</button>
+				<button class="lg:text-sm lg:px-12 lg:py-3 md:text-xs md:px-6 md:py-2 sm:text-xs sm:px-3 sm:py-1 hover:bg-White hover:text-Orange hover:shadow-none border-solid border-Orange border-2 text-White bg-Orange px-12 py-3 rounded-md shadow-lg shadow-LightOrange duration-300">Sign up</button>
+			</div>
+			<button id="menu-btn" class="sm:flex items-center md:hidden hover:bg-gray-100 w-10 h-10 rounded-lg duration-200">
+				<div class="flex flex-col mx-auto space-y-1  hamburger-button">
+					<span class="hamburger-top w-5 h-0.5 bg-black rounded-full duration-200"></span>
+					<span class="hamburger-middle w-5 h-0.5 bg-black rounded-full duration-200"></span>
+					<span class="hamburger-bottom w-5 h-0.5 bg-black rounded-full duration-200"></span>
+				</div>
+			</button>
+			<!-- Mobile menu -->
+			<div id="mobile-menu" class="absolute top-14 left-0 md:hidden flex flex-col bg-white w-full mx-auto shadow-xl rounded-lg p-6 duration-200 hamburger-button-toggle">
+				<a href="#" class="hover:text-black hover:bg-BrightSupLightOrange text-BrightBlack p-3 rounded-lg text-center duration-300">Home</a>
+				<a href="#" class="hover:text-black hover:bg-BrightSupLightOrange text-BrightBlack p-3 rounded-lg text-center duration-300">About</a>
+				<a href="#" class="hover:text-black hover:bg-BrightSupLightOrange text-BrightBlack p-3 rounded-lg text-center duration-300">Destination</a>
+				<a href="#" class="hover:text-black hover:bg-BrightSupLightOrange text-BrightBlack p-3 rounded-lg text-center duration-300">Tour</a>
+				<a href="#" class="hover:text-black hover:bg-BrightSupLightOrange text-BrightBlack p-3 rounded-lg text-center duration-300">Blog</a>
+				<button class="hover:border-Orange border-BrightSupOrange border-solid border-2 py-2 mt-10 rounded-lg duration-300 text-center">Login</button>
+				<button class="hover:bg-Orange bg-BrightOrange text-white duration-300 py-2 mt-6 rounded-lg text-center">Sign up</button>
+			</div>
+		</div>
+	</nav>
+	<!-- Hero Section -->
+	<section>
+		<div class="xl:px-40 md:px-6 sm:px-6 container flex mx-auto justify-between mt-24 pb-24 duration-300">
+			<div class="flex flex-col">
+				<div class="flex md:flex-row sm:flex-col-reverse">
+					<div class="sm:flex sm:flex-col sm:justify-center md:justify-start md:block">
+						<p class="lg:text-4xl md:text-3xl sm:text-4xl sm:text-center md:text-start font-bold mt-16">Get Started your exciting <Span class="text-Orange">journey</Span> with us.</p>
+						<p class="lg:text-sm md:text-xs sm:text-center md:text-start text-BrightBlack mt-8 pb-12">A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place.</p>
+						<button class="hover:text-White hover:bg-Orange lg:py-3 lg:px-10 lg:text-sm md:px-4 md:py-2 md:text-xs sm:px-6 sm:py-3 text-Orange border-solid border-Orange border-2 rounded-md duration-300">Discover now</button>
+					</div>
+					<img class="w-auto h-auto lg:max-w-xl md:max-w-md" src="./src/img/Image.png">
+				</div>
+				<div class="lg:py-4 lg:px-5 md:py-3 md:px-5 sm:px-5 sm:py-4 sm:w-full relative container mx-auto flex flex-row justify-between rounded-md mt-16 shadow-3xl space-x-2 md:w-2/3">
+					<div class="flex flex-col">
+						<div class="flex flex-row"><p class="lg:text-base md:text-sm sm:text-xs sm:font-bold flex text-sm me-1">Location</p><img class="flex" src="./src/img/Vector 4855.svg" width="9px"></div>
+						<p class="lg:text-sm md:text-xs sm:text-xs text-Gray">Where are you going</p>
+					</div>
+					<div class="flex flex-col">
+						<div class="flex flex-row"><p class="lg:text-base md:text-sm sm:text-xs sm:font-bold flex text-sm me-1">Date</p><img class="flex" src="./src/img/Vector 4855.svg" width="9px"></div>
+						<p class="lg:text-sm md:text-xs sm:text-xs text-Gray">When you will go</p>
+					</div>
+					<div class="flex flex-col">
+						<div class="flex flex-row"><p class="lg:text-base md:text-sm sm:text-xs sm:font-bold flex text-sm me-1">Guest</p><img class="flex" src="./src/img/Vector 4855.svg" width="9px"></div>
+						<p class="lg:text-sm md:text-xs sm:text-xs text-Gray">Number of Guest</p>
+					</div>
+					<button class="md:text-xs md:py-0 md:px-3 sm:px-3 sm:text-xs hover:bg-White hover:text-Orange hover:shadow-none border-solid border-Orange border-2 text-White text-sm bg-Orange px-6 py-3 rounded-md shadow-lg shadow-LightOrange duration-300">Explore Now</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-BrightGraySupLight">
+		<div class="xl:px-40 sm:px-6 relative flex flex-col container mx-auto w-full py-16">
+			<div class="flex justify-center md:ms-28 sm:ms-3">
+				<div class="text-center">
+					<p class="lg:text-4xl md:text-4xl sm:text-3xl font-bold">Things you need <Span class="text-Orange">to do</Span></p>
+					<p class="lg:text-sm md:text-xs sm:text-sm text-BrightBlack mt-5">We ensure that you’ll embark on a perfectly planned,<br> safe vacation at a price you can afford.</p>
+				</div>
+				<img class="flex md:block sm:hidden md:ms-12 sm:ms-4 sm:pe-3 sm:w-3/12 md:w-2/12"src="./src/img/Element.svg" width="140px">
+			</div>
+			<!-- Cards -->
+			<div class="lg:mt-6 md:mt-2 sm:mx-auto grid md:grid-cols-3 sm:grid-cols-1 sm:gap-5 p-6">
+				<div class="lg:p-9 md:p-6 sm:p-9 bg-white rounded-md w-11/12 sm:w-full shadow-3xl hover:shadow-lg duration-300">
+					<img class="lg:w-auto md:w-2/12" src="./src/img/Group (2).svg" width="35px">
+					<p class="lg:text-lg sm:text-xl lg:mt-8 md:text-sm md:mt-4 sm:mt-4 font-bold">Sign Up</p>
+					<p class="lg:text-sm md:text-xs sm:text-sm text-Gray md:mt-1 font-semibold mt-3 me-2">Completes all the work associated with planning and processing</p>
+				</div>
+				<div class="lg:p-9 md:p-6 sm:p-9 bg-white rounded-md p-9 w-11/12 sm:w-full shadow-3xl hover:shadow-lg duration-300">
+					<img class="lg:w-auto md:w-2/12" src="./src/img/Group (1).svg" width="35px">
+					<p class="lg:text-lg sm:text-xl lg:mt-8 md:text-sm md:mt-4 sm:mt-4 font-bold">Worth of Money</p>
+					<p class="lg:text-sm md:text-xs sm:text-sm text-Gray md:mt-1 font-semibold mt-3">After successful access then book from exclusive deals & pricing</p>
+				</div>
+				<div class="lg:p-9 md:p-6 sm:p-9 bg-white rounded-md p-9 w-11/12 sm:w-full shadow-3xl hover:shadow-lg duration-300">
+					<img class="lg:w-auto md:w-2/12" src="./src/img/Group.svg" width="35px">
+					<p class="lg:text-lg sm:text-xl lg:mt-8 md:text-sm md:mt-4 sm:mt-4 font-bold">exciting Travel</p>
+					<p class="lg:text-sm md:text-xs sm:text-sm text-Gray md:mt-1 font-semibold mt-3">Start and explore a wide range of exciting travel experience.</p>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<section>
+		<div class="xl:px-40 md:px-6 sm:px-6 container mx-auto mt-16">
+			<div class="flex justify-center ms-28 sm:ms-3">
+				<div class="flex flex-col text-center">
+					<p class="lg:text-4xl md:text-4xl sm:text-3xl font-bold">Exclusive <Span class="text-Orange">deals & discounts</Span></p>
+					<p class="lg:text-sm md:text-xs text-BrightBlack mt-5">Discover our fantastic early booking discounts<br> & start planning your journey</p>
+				</div>
+				<img class="md:flex sm:hidden md:ms-12 sm:ms-3" src="./src/img/Element (1).svg" width="120px">
+			</div>
+			<div class="grid md:grid-cols-4 sm:grid-cols-2 gap-5 mt-12 ">
+				<div class="hover:shadow-xl hover:shadow-SupLightOrange shadow-sm rounded-lg duration-300 overflow relative ">
+					<div class="flex justify-center items-center w-full h-71 relative image-card">
+						<img class="w-full bg-BrightGraySupLight overflow h-full" src="./src/img/Image (4).png">
+						<div class="black-hover overflow w-full h-full"></div>
+						<button class="xl:text-md xl:px-6 xl:py-3 lg:text-sm lg:px-4 lg:py-2 md:text-xs md:px-2 md:py-1 sm:px-4 sm:py-2 card-button absolute mx-auto hover:bg-Orange text-White text-sm bg-BrightOrange rounded-md duration-300">Book Now</button>
+					</div>
+					<div class="flex flex-col">
+						<div class="flex justify-between p-3">
+							<p class="xl:text-lg lg:text-md md:text-sm font-bold mt-2">Madrid</p>
+							<div class="flex">
+								<img class="mt-2" src="./src/img/star 1.svg" width="12px">
+								<p class="xl:text-sm lg:text-xs md:text-xs text-Gray text-xs ms-1 mt-3">4.8</p>
+							</div>
+						</div>
+						<div class="flex justify-between p-3 md:mb-12">
+							<div class="flex">
+								<img class="" src="./src/img/Vector.svg" width="10px">
+								<p class="text-BrightBlack text-xs ms-1">Spain</p>
+							</div>
+							<div class="flex">
+								<p class="text-Gray text-xs font-semibold ms-1 mt-1 line-through">$950</p>
+								<p class="text-Orange font-semibold bg-SupLightOrange px-1 rounded-md text-xs ms-1 mt-1">$850</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hover:shadow-xl hover:shadow-SupLightOrange shadow-sm rounded-lg duration-300">
+					<div class="flex justify-center items-center w-full h-71 relative image-card overflow">
+						<img class="w-full bg-BrightGraySupLight overflow h-full" src="./src/img/Image (3).png">
+						<div class="black-hover overflow w-full h-full"></div>
+						<button class="xl:text-md xl:px-6 xl:py-3 lg:text-sm lg:px-4 lg:py-2 md:text-xs md:px-2 md:py-1 sm:px-4 sm:py-2 card-button absolute mx-auto hover:bg-Orange text-White text-sm bg-BrightOrange px-4 py-2 rounded-md duration-300">Book Now</button>
+					</div>
+					<div class="flex flex-col">
+						<div class="flex justify-between p-3">
+							<p class="xl:text-lg lg:text-md md:text-sm font-bold mt-2">Firenze</p>
+							<div class="flex">
+								<img class="mt-2" src="./src/img/star 1.svg" width="12px">
+								<p class="xl:text-sm lg:text-xs md:text-xs text-Gray text-xs ms-1 mt-3">4.5</p>
+							</div>
+						</div>
+						<div class="flex justify-between p-3">
+							<div class="flex">
+								<img class="" src="./src/img/Vector.svg" width="10px">
+								<p class="text-BrightBlack text-xs ms-1">Italy</p>
+							</div>
+							<div class="flex">
+								<p class="text-Gray text-xs font-semibold ms-1 mt-1 line-through">$850</p>
+								<p class="text-Orange font-semibold bg-SupLightOrange px-1 rounded-md text-xs ms-1 mt-1">$750</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hover:shadow-xl hover:shadow-SupLightOrange shadow-sm rounded-lg duration-300 overflow">
+					<div class="flex justify-center items-center w-full h-71 relative image-card">
+						<img class="w-full bg-BrightGraySupLight overflow h-full" src="./src/img/Image (2).png">
+						<div class="black-hover overflow w-full h-full"></div>
+						<button class="xl:text-md xl:px-6 xl:py-3 lg:text-sm lg:px-4 lg:py-2 md:text-xs md:px-2 md:py-1 sm:px-4 sm:py-2 card-button absolute mx-auto hover:bg-Orange text-White text-sm bg-BrightOrange px-4 py-2 rounded-md duration-300">Book Now</button>
+					</div>
+					<div class="flex flex-col">
+						<div class="flex justify-between p-3">
+							<p class="xl:text-lg lg:text-md md:text-sm font-bold mt-2">Paris</p>
+							<div class="flex">
+								<img class="mt-2" src="./src/img/star 1.svg" width="12px">
+								<p class="xl:text-sm lg:text-xs md:text-xs text-Gray text-xs ms-1 mt-3">4.4</p>
+							</div>
+						</div>
+						<div class="flex justify-between p-3 pb-6">
+							<div class="flex">
+								<img class="" src="./src/img/Vector.svg" width="10px">
+								<p class="text-BrightBlack text-xs ms-1">France</p>
+							</div>
+							<div class="flex">
+								<p class="text-Gray text-xs font-semibold ms-1 mt-1 line-through">$699</p>
+								<p class="text-Orange font-semibold bg-SupLightOrange px-1 rounded-md text-xs ms-1 mt-1">$599</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hover:shadow-xl hover:shadow-SupLightOrange shadow-sm rounded-lg overflow duration-300">
+					<div class="flex justify-center items-center w-full h-71 relative image-card rounded-md overflow">
+						<img class="w-full bg-BrightGraySupLight overflow h-full" src="./src/img/Image (1).png">
+						<div class="black-hover overflow w-full h-full"></div>
+						<button class="xl:text-md xl:px-6 xl:py-3 lg:text-sm lg:px-4 lg:py-2 md:text-xs md:px-2 md:py-1 sm:px-4 sm:py-2 card-button absolute mx-auto hover:bg-Orange text-White text-sm bg-BrightOrange px-4 py-2 rounded-md duration-300">Book Now</button>
+					</div>
+					<div class="flex flex-col">
+						<div class="flex justify-between p-3">
+							<p class="xl:text-lg lg:text-md md:text-sm font-bold mt-2">London</p>
+							<div class="flex">
+								<img class="mt-2" src="./src/img/star 1.svg" width="12px">
+								<p class="xl:text-sm lg:text-xs md:text-xs text-Gray ms-1 mt-3">4.8</p>
+							</div>
+						</div>
+						<div class="flex justify-between p-3">
+							<div class="flex">
+								<img class="" src="./src/img/Vector.svg" width="10px">
+								<p class="text-BrightBlack text-xs ms-1">UK</p>
+							</div>
+							
+							<div class="flex">
+								<p class="text-Gray text-xs font-semibold ms-1 mt-1 line-through">$950</p>
+								<p class="text-Orange font-semibold bg-SupLightOrange px-1 rounded-md text-xs ms-1 mt-1">$850</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="relative flex justify-center mt-40">
+		<div class="xl:px-40 md:px-6 sm:px-6 flex container mx-auto mt-24 subscribe">
+			<div class="flex flex-col w-full bg-Orange rounded-xl px-6 py-16 justify-center">
+				<p class="md:text-3xl sm:text-2xl text-white text-4xl text-center font-bold"> Subscribe and get exclusive <br> deals and offer</p>
+				<div class="flex items-center mx-auto mt-12 rounded-lg bg-white md:w-3/5 sm:w-5/6 py-2 px-4">
+					<img src="./src/img/Group 46.svg" width="15px">
+					<input class="input text-xs ms-1 w-full px-3" placeholder="Enter your email" type="text">
+					<button class=" hover:bg-White hover:text-Orange border-solid border-Orange border-2 text-White text-sm bg-Orange px-4 py-2 rounded-md duration-300">Subscribe</button>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<section class="bg-BrightGraySupLight">	
+		<div class="xl:px-40 md:px-6 sm:px-6 container mx-auto">
+			<div class="grid grid-cols-2 mt-24 pt-64">
+				<div class="">
+					<div class="flex">
+						<h1 class="font-bold text-xl me-2">TraBook</h1><img src="./src/img/logo.svg">
+					</div>
+					<p class="text-xs text-Gray font-semibold mt-5 leading-6">Book your trip in minute, get full <br> Control for much longer.</p>
+					<div class="flex flex-row space-x-4 mt-5">
+						<a href="#"><div class="rounded-full shadow-3xl bg-white facebook">
+							<svg class="social-image" width="6" height="13" viewBox="0 0 6 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M5.54485 2.79909C5.2326 2.70031 4.8735 2.63445 4.54563 2.63445C4.1397 2.63445 3.26538 2.91434 3.26538 3.45765V4.75831H5.34189V6.94803H3.26538V12.9903H1.17327V6.94803H0.142822V4.75831H1.17327V3.65522C1.17327 1.99235 1.89146 0.609375 3.62448 0.609375C4.21776 0.609375 5.27943 0.642303 5.85711 0.856335L5.54485 2.79909Z" fill="#444444"/>
+							</svg>
+						</div></a>
+						<a href="#"><div class="rounded-full shadow-3xl bg-white instagram">
+							<svg class="social-image" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_201_484)">
+								<path d="M14.5667 0.933594H2.5C1.12167 0.933594 0 2.05526 0 3.43359V15.5003C0 16.8789 1.12167 18.0003 2.5 18.0003H14.5667C15.9453 18.0003 17.0667 16.8789 17.0667 15.5003V3.43359C17.0667 2.05526 15.9453 0.933594 14.5667 0.933594ZM16.0667 15.5003C16.0667 16.3273 15.3937 17.0003 14.5667 17.0003H2.5C1.673 17.0003 1 16.3273 1 15.5003V3.43359C1 2.60659 1.673 1.93359 2.5 1.93359H14.5667C15.3937 1.93359 16.0667 2.60659 16.0667 3.43359V15.5003Z" fill="#444"/>
+								<path d="M14.0334 2.9668C13.4821 2.9668 13.0334 3.41546 13.0334 3.9668C13.0334 4.51813 13.4821 4.9668 14.0334 4.9668C14.5848 4.9668 15.0334 4.51813 15.0334 3.9668C15.0334 3.41546 14.5848 2.9668 14.0334 2.9668Z" fill="#444"/>
+								<path d="M8.53345 4.9668C6.05211 4.9668 4.03345 6.98546 4.03345 9.4668C4.03345 11.9481 6.05211 13.9668 8.53345 13.9668C11.0148 13.9668 13.0334 11.9481 13.0334 9.4668C13.0334 6.98546 11.0148 4.9668 8.53345 4.9668ZM8.53345 12.9668C6.60345 12.9668 5.03345 11.3968 5.03345 9.4668C5.03345 7.5368 6.60345 5.9668 8.53345 5.9668C10.4634 5.9668 12.0334 7.5368 12.0334 9.4668C12.0334 11.3968 10.4634 12.9668 8.53345 12.9668Z" fill="#444"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_201_484">
+								<rect width="17.0667" height="17.0667" fill="white" transform="translate(0 0.933594)"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</div></a>
+						<a href="#"><div class="rounded-full shadow-3xl bg-white twitter">
+							<svg class="social-image" width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.317 2.15967C15.7365 2.4143 15.118 2.58308 14.4731 2.66503C15.1365 2.26893 15.6429 1.6465 15.8809 0.896252C15.2624 1.26503 14.5795 1.52552 13.8517 1.67089C13.2643 1.04552 12.4273 0.658203 11.5141 0.658203C9.7424 0.658203 8.31606 2.09625 8.31606 3.85918C8.31606 4.11284 8.33752 4.35674 8.3902 4.58893C5.72971 4.45918 3.37557 3.18406 1.7941 1.24162C1.51801 1.72064 1.35606 2.26893 1.35606 2.85918C1.35606 3.96747 1.92679 4.94991 2.77752 5.51869C2.26337 5.50893 1.75898 5.35967 1.33167 5.12454C1.33167 5.1343 1.33167 5.14698 1.33167 5.15967C1.33167 6.71479 2.44093 8.0065 3.89557 8.30406C3.63508 8.37528 3.35118 8.40942 3.05654 8.40942C2.85167 8.40942 2.64484 8.39772 2.45069 8.35479C2.86532 9.62211 4.04191 10.5538 5.44093 10.5841C4.35215 11.4358 2.96971 11.9489 1.47313 11.9489C1.21069 11.9489 0.958983 11.9372 0.707275 11.905C2.12484 12.8192 3.80484 13.3411 5.61654 13.3411C11.5053 13.3411 14.7248 8.46308 14.7248 4.23479C14.7248 4.09333 14.72 3.95674 14.7131 3.82113C15.3483 3.3704 15.8819 2.80747 16.317 2.15967Z" fill="#444444"/>
+							</svg>
+						</div></a>
+					</div>
+				</div>
+				<div class="grid grid-cols-3">
+					<div>
+						<a href="#"><p class="text-sm font-semibold mb-6">Company</p></a>
+						<a href="#"><p class="hover:text-BrightBlack md:text-sm sm:text-xs text-Gray mb-3">About</p></a>
+						<a href="#"><p class="hover:text-BrightBlack md:text-sm sm:text-xs text-Gray mb-3 duration-200">Careers</p></a>
+						<a href="#"><p class="hover:text-BrightBlack md:text-sm sm:text-xs text-Gray mb-3 duration-200">Logistic</p></a>
+						<a href="#"><p class="hover:text-BrightBlack md:text-sm sm:text-xs text-Gray mb-3 duration-200">Privacy & Policy</p></a>
+					</div>
+					<div>
+						<a href="#"><p class="text-sm font-semibold mb-6">Contact</p></a>
+						<a href="#"><p class="hover:text-BrightBlack md:text-sm sm:text-xs text-Gray mb-3">Help/FAQ</p></a>
+						<a href="#"><p class="hover:text-BrightBlack md:text-sm sm:text-xs text-Gray mb-3 duration-200">Press</p></a>
+						<a href="#"><p class="hover:text-BrightBlack md:text-sm sm:text-xs text-Gray mb-3 duration-200">Affilates</p></a>
+					</div>
+					<div>
+						<a href="#"><p class="text-sm font-semibold mb-6">More</p></a>
+						<a href="#"><p class="hover:text-BrightBlack md:text-sm sm:text-xs text-Gray mb-3">Press Centre</p></a>
+						<a href="#"><p class="hover:text-BrightBlack md:text-sm sm:text-xs text-Gray mb-3 duration-200">Our Blog</p></a>
+						<a href="#"><p class="hover:text-BrightBlack md:text-sm sm:text-xs text-Gray mb-3 duration-200">Low fare tips</p></a>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="flex justify-between py-8">
+				<p class="text-LightGray text-xs font-semibold">Copyright, Trabook 2022. All rights reserved.</p>
+				<p class="text-LightGray text-xs font-semibold">Terms & Conditions</p>
+			</div>
+		</div>
+	</section>
+	<script src="./src/js/script.js"></script>
+</body>
+</html>
